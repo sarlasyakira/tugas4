@@ -1,0 +1,56 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main(){
+  char kode;
+  //clrscr();
+  string a;
+  int b;
+  int c;
+  int d;
+  int hasil;
+  string hadiah;
+    cout << "PROGRAM HITUNG NILAI RATA-RATA"<< endl;
+  cout << "Nama siswa : ";
+  getline (cin,a); 
+  cout << "Hasil Pertandingan I: ";
+  cin >> b;
+  cout << "Hasil Pertandingan II : ";
+  cin >> c;
+  cout << "Hasil Pertandingan III : ";
+  cin >> d;
+  
+    //proses
+    hasil=(b+c+d)/3;
+    if (hasil >= 85) {
+        hadiah = "Komputer Core i5";
+    }
+    else if (hasil >= 70) {
+      hadiah = "Uang sebanyak Rp. 2.500,000";
+    }
+    else {
+      hadiah = "Hiburan";
+    //output
+    }
+    cout <<"\nHasil Nilai Rata-Rata = "<<hasil<<endl;
+  cout << "Siswa yang bernama" << (cin,a) << endl;
+  cout << "Memperoleh nilai rata-rata " << hasil << "dari hasil perlombaan yang diikutinya" << endl;
+  cout << "Hadiah yang di dapat adalah "<<hadiah<<endl;
+  return 0;
+}
+
+Pseudo Code 
+
+Begin
+int main;
+if (nilai >= 85)
+print "Komputer Core i5"
+else if (nilai >= 70)
+print "Uang sebesar Rp. 2.500,000"
+else
+print "Hiburan"
+end
+
+Perbedaan Else If & Switch Case 
+Else If yaitu dapat menguji ekspresi berdasarkan nilai atau kondisi.
+Switch Case yaitu menguji ekpresi hanya berdasarkan satu integer, nilai-nilai enumerated, atau objek string.
